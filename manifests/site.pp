@@ -29,4 +29,14 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+  # $role = hiera('role', undef)
+  # if $role != undef {
+  #   # Get role from hiera
+  #   notice("classifying node ${trusted['certname']} from hiera data")
+  #   include $role
+  # } else {
+  #   # Get role from external fact server_role
+  #   notice("classifying node ${trusted['certname']} from external fact")
+  #   include "role::${facts['server_role']}"
+  # }
 }
