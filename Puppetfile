@@ -12,3 +12,6 @@ mod 'report2snow',
 mod 'report2slack',
     :git => 'https://github.com/todom67/report2slack.git',
     :branch => 'master'
+mod 'puppetconfdemo',
+    :git => 'https://github.com/todom67/puppetconfdemo.git',
+    :branch => 'master'
